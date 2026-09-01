@@ -1,0 +1,13 @@
+streamlit
+pandas
+numpy
+matplotlib
+scikit-learn
+langchain
+langchain-core
+langchain-community
+langchain-experimental
+langchain-huggingface
+langgraph
+sentence-transformers
+chromadb
