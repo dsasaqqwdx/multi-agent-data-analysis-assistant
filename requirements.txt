@@ -14,3 +14,5 @@ langgraph
 
 sentence-transformers
 chromadb
+tabulate
+torchvision
