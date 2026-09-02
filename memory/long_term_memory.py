@@ -7,9 +7,6 @@ from datetime import datetime
 DB_PATH = "data/memory.db"
 
 
-# ==========================================
-# DATABASE CONNECTION
-# ==========================================
 
 def get_connection():
 
@@ -26,9 +23,6 @@ def get_connection():
     return conn
 
 
-# ==========================================
-# INITIALIZE LONG TERM MEMORY
-# ==========================================
 
 def initialize_long_term_memory():
 
@@ -63,9 +57,6 @@ def initialize_long_term_memory():
     conn.close()
 
 
-# ==========================================
-# SAVE MEMORY
-# ==========================================
 
 def save_memory(
 
@@ -161,10 +152,6 @@ def save_memory(
     conn.close()
 
 
-# ==========================================
-# GET MEMORY BY KEY
-# ==========================================
-
 def get_memory(
     memory_key
 ):
@@ -204,9 +191,6 @@ def get_memory(
     return None
 
 
-# ==========================================
-# GET ALL MEMORIES
-# ==========================================
 
 def get_all_memories():
 
@@ -241,9 +225,6 @@ def get_all_memories():
     return rows
 
 
-# ==========================================
-# SEARCH MEMORY
-# ==========================================
 
 def search_memory(
     query
@@ -316,9 +297,7 @@ def search_memory(
     return relevant_memories
 
 
-# ==========================================
-# DELETE MEMORY
-# ==========================================
+
 
 def delete_memory(
     memory_key
@@ -348,9 +327,6 @@ def delete_memory(
 import re
 
 
-# ==========================================
-# EXTRACT IMPORTANT USER MEMORY
-# ==========================================
 
 def extract_and_save_memory(
     text
@@ -358,10 +334,6 @@ def extract_and_save_memory(
 
     text_lower = text.lower()
 
-
-    # --------------------------------------
-    # NAME
-    # --------------------------------------
 
     patterns = [
 
